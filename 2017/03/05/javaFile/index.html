@@ -87,37 +87,21 @@
 
 
 
-<meta name="description" content="JAVA字符串不可变字符串String
-String常用方法
-
-int length()返回字符串长度
-boolean isEmpty()判断字符串长度是否为0，长度为0返回true
-char charAt(int index)返回指定索引处的字符
-boolean equals(Object anObject)将此对象与指定的对象比较（通常用来比较两个字符串是否相等）
-int indexOf(in">
+<meta name="description" content="JAVA File类File常用方法
+代码实例1234567891011121314151617181920212223242526272829File file = new File(&amp;quot;文件路径&amp;quot;);//构建信息System.out.println(file.getName());//返回名称System.out.println(file.getPath());System.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javaString">
-<meta property="og:url" content="https://missluck.github.io/2017/03/04/javaString/index.html">
+<meta property="og:title" content="javaFile">
+<meta property="og:url" content="https://missluck.github.io/2017/03/05/javaFile/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="JAVA字符串不可变字符串String
-String常用方法
-
-int length()返回字符串长度
-boolean isEmpty()判断字符串长度是否为0，长度为0返回true
-char charAt(int index)返回指定索引处的字符
-boolean equals(Object anObject)将此对象与指定的对象比较（通常用来比较两个字符串是否相等）
-int indexOf(in">
-<meta property="og:updated_time" content="2017-03-05T13:22:22.878Z">
+<meta property="og:description" content="JAVA File类File常用方法
+代码实例1234567891011121314151617181920212223242526272829File file = new File(&amp;quot;文件路径&amp;quot;);//构建信息System.out.println(file.getName());//返回名称System.out.println(file.getPath());System.">
+<meta property="og:image" content="http://omajsh8cx.bkt.clouddn.com/file.png">
+<meta property="og:updated_time" content="2017-03-05T13:58:26.978Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javaString">
-<meta name="twitter:description" content="JAVA字符串不可变字符串String
-String常用方法
-
-int length()返回字符串长度
-boolean isEmpty()判断字符串长度是否为0，长度为0返回true
-char charAt(int index)返回指定索引处的字符
-boolean equals(Object anObject)将此对象与指定的对象比较（通常用来比较两个字符串是否相等）
-int indexOf(in">
+<meta name="twitter:title" content="javaFile">
+<meta name="twitter:description" content="JAVA File类File常用方法
+代码实例1234567891011121314151617181920212223242526272829File file = new File(&amp;quot;文件路径&amp;quot;);//构建信息System.out.println(file.getName());//返回名称System.out.println(file.getPath());System.">
+<meta name="twitter:image" content="http://omajsh8cx.bkt.clouddn.com/file.png">
 
 
 
@@ -145,13 +129,13 @@ int indexOf(in">
 
 
 
-  <link rel="canonical" href="https://missluck.github.io/2017/03/04/javaString/"/>
+  <link rel="canonical" href="https://missluck.github.io/2017/03/05/javaFile/"/>
 
 
 
 
 
-  <title> javaString | 个人博客 </title>
+  <title> javaFile | 个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -280,7 +264,7 @@ int indexOf(in">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://missluck.github.io/2017/03/04/javaString/">
+    <link itemprop="mainEntityOfPage" href="https://missluck.github.io/2017/03/05/javaFile/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵雷">
@@ -301,7 +285,7 @@ int indexOf(in">
             
             
               
-                javaString
+                javaFile
               
             
           </h1>
@@ -316,8 +300,8 @@ int indexOf(in">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-04T22:00:00+08:00">
-                2017-03-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T21:19:46+08:00">
+                2017-03-05
               </time>
             
 
@@ -374,37 +358,8 @@ int indexOf(in">
       
 
       
-        <h1 id="JAVA字符串"><a href="#JAVA字符串" class="headerlink" title="JAVA字符串"></a>JAVA字符串</h1><h2 id="不可变字符串String"><a href="#不可变字符串String" class="headerlink" title="不可变字符串String"></a>不可变字符串String</h2><ul>
-<li><p>String常用方法</p>
-<ul>
-<li>int length()返回字符串长度</li>
-<li>boolean isEmpty()判断字符串长度是否为0，长度为0返回true</li>
-<li>char charAt(int index)返回指定索引处的字符</li>
-<li>boolean equals(Object anObject)将此对象与指定的对象比较（通常用来比较两个字符串是否相等）</li>
-<li>int indexOf(int ch)返回从左向右查找字符的索引</li>
-<li>int indexOf(String str)返回从左向右查找子字符串的索引</li>
-<li>int lastIndexOf(int ch)返回从右向左查找的字符索引</li>
-<li>int lastIndexOf(String str)返回从右向左查找子字符串的索引</li>
-<li>String substring(int beginIndex)返回一个从索引beginIndex开始截取到最后的字符串</li>
-<li>String substring(int beginIndex, int endIndex)返回一个从索引beginIndex开始截取到索引endIndex的字符串</li>
-<li>String[] split(String regex)根据给定正则表达式的匹配拆分此字符串</li>
-<li>String replace(CharSequence target, CharSequence replacement)根据给定的replacement来替换字符串中的target</li>
-<li>toLowerCase()将字符串全转换成小写</li>
-<li>toUpperCase()将字符串全转换成大写</li>
-</ul>
-</li>
-<li><p>String 常见的面试题</p>
-<ul>
-<li>执行完循环多少个对象?<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">String gh = &quot;a&quot;;                //1001个对象</div><div class="line">String gh = new String(&quot;a&quot;);    //1002个对象</div><div class="line">for(int i=0;i&lt;1000;i++)&#123;</div><div class="line">	gh+=i;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="可变字符串StringBuffer与StringBuilder"><a href="#可变字符串StringBuffer与StringBuilder" class="headerlink" title="可变字符串StringBuffer与StringBuilder"></a>可变字符串StringBuffer与StringBuilder</h2><ul>
-<li>StringBuilder(线程不安全，效率高) StringBuffer(线程安全，效率低)</li>
-<li>用法与String相同 新增一个添加append()方法</li>
-</ul>
-
+        <h1 id="JAVA-File类"><a href="#JAVA-File类" class="headerlink" title="JAVA File类"></a>JAVA File类</h1><h2 id="File常用方法"><a href="#File常用方法" class="headerlink" title="File常用方法"></a>File常用方法</h2><p><img src="http://omajsh8cx.bkt.clouddn.com/file.png" alt="File类"></p>
+<h2 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">File file = new File(&quot;文件路径&quot;);</div><div class="line"></div><div class="line">//构建信息</div><div class="line">System.out.println(file.getName());//返回名称</div><div class="line">System.out.println(file.getPath());</div><div class="line">System.out.println(file.getAbsoluteFile());</div><div class="line">System.out.println(file.getAbsolutePath());//返回绝对路径</div><div class="line">System.out.println(file.getParent());//返回上一级目录(如果没有上一级返回null)</div><div class="line"></div><div class="line">//判断信息</div><div class="line">System.out.println(&quot;此抽象路径名是否存在:&quot;+file.exists());//此抽象路径名表示的目录或文件是否存在</div><div class="line">System.out.println(&quot;此抽象路径名是否可读:&quot;+file.canWrite());</div><div class="line">System.out.println(&quot;此抽象路径名是否可写:&quot;+file.canRead());</div><div class="line">System.out.println(&quot;此抽象路径名是否表示一个文件:&quot;+file.isFile());</div><div class="line">System.out.println(&quot;此抽象路径名是否表示一个目录:&quot;+file.isDirectory());</div><div class="line">System.out.println(&quot;此抽象路径名是否是一个绝对路径:&quot;+file.isAbsolute());</div><div class="line">System.out.println(&quot;此抽象路径名是否是一个隐藏文件&quot;+file.isHidden());</div><div class="line"></div><div class="line">//长度 创建 删除</div><div class="line">System.out.println(file.length());</div><div class="line">if(file.exists())&#123;</div><div class="line">    file.delete();</div><div class="line">&#125;else&#123;</div><div class="line">    try &#123;</div><div class="line">        file.createNewFile();</div><div class="line">    &#125; catch (IOException e) &#123;</div><div class="line">        e.printStackTrace();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -440,8 +395,8 @@ int indexOf(in">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/04/javaDataType/" rel="next" title="java数据类型">
-                <i class="fa fa-chevron-left"></i> java数据类型
+              <a href="/2017/03/05/javaDate/" rel="next" title="javaDate">
+                <i class="fa fa-chevron-left"></i> javaDate
               </a>
             
           </div>
@@ -450,8 +405,8 @@ int indexOf(in">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/05/javaDate/" rel="prev" title="javaDate">
-                javaDate <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/05/javaException/" rel="prev" title="javaException">
+                javaException <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -577,7 +532,7 @@ int indexOf(in">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA字符串"><span class="nav-number">1.</span> <span class="nav-text">JAVA字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#不可变字符串String"><span class="nav-number">1.1.</span> <span class="nav-text">不可变字符串String</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可变字符串StringBuffer与StringBuilder"><span class="nav-number">1.2.</span> <span class="nav-text">可变字符串StringBuffer与StringBuilder</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA-File类"><span class="nav-number">1.</span> <span class="nav-text">JAVA File类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#File常用方法"><span class="nav-number">1.1.</span> <span class="nav-text">File常用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实例"><span class="nav-number">1.2.</span> <span class="nav-text">代码实例</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -87,16 +87,39 @@
 
 
 
-<meta name="description" content="这是一个个人博客">
+<meta name="description" content="#JAVA时间类
+时间类关系图
+
+Java.util.date 核心类
+Java.text.DateFormat 时间格式化 SimpleDateFormat时间对象和字符串转换
+Java.util.Calendar日期类
+Java中时间是从标准纪元1970.1.1 0点开始到某个时刻的毫秒数,类型为longDate类常用方法
+long getTime() 返回从标准纪元1970.1.1 0点开始">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javaDate">
 <meta property="og:url" content="https://missluck.github.io/2017/03/05/javaDate/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="这是一个个人博客">
-<meta property="og:updated_time" content="2017-03-04T16:57:41.500Z">
+<meta property="og:description" content="#JAVA时间类
+时间类关系图
+
+Java.util.date 核心类
+Java.text.DateFormat 时间格式化 SimpleDateFormat时间对象和字符串转换
+Java.util.Calendar日期类
+Java中时间是从标准纪元1970.1.1 0点开始到某个时刻的毫秒数,类型为longDate类常用方法
+long getTime() 返回从标准纪元1970.1.1 0点开始">
+<meta property="og:image" content="http://omajsh8cx.bkt.clouddn.com/javaDate.png">
+<meta property="og:updated_time" content="2017-03-05T13:15:46.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javaDate">
-<meta name="twitter:description" content="这是一个个人博客">
+<meta name="twitter:description" content="#JAVA时间类
+时间类关系图
+
+Java.util.date 核心类
+Java.text.DateFormat 时间格式化 SimpleDateFormat时间对象和字符串转换
+Java.util.Calendar日期类
+Java中时间是从标准纪元1970.1.1 0点开始到某个时刻的毫秒数,类型为longDate类常用方法
+long getTime() 返回从标准纪元1970.1.1 0点开始">
+<meta name="twitter:image" content="http://omajsh8cx.bkt.clouddn.com/javaDate.png">
 
 
 
@@ -353,7 +376,36 @@
       
 
       
-        
+        <p>#JAVA时间类</p>
+<h2 id="时间类关系图"><a href="#时间类关系图" class="headerlink" title="时间类关系图"></a>时间类关系图</h2><p><img src="http://omajsh8cx.bkt.clouddn.com/javaDate.png" alt="时间类关系图"></p>
+<ul>
+<li>Java.util.date 核心类</li>
+<li>Java.text.DateFormat 时间格式化 SimpleDateFormat时间对象和字符串转换</li>
+<li>Java.util.Calendar日期类</li>
+<li>Java中时间是从标准纪元1970.1.1 0点开始到某个时刻的毫秒数,类型为long<h2 id="Date类常用方法"><a href="#Date类常用方法" class="headerlink" title="Date类常用方法"></a>Date类常用方法</h2></li>
+<li>long getTime() 返回从标准纪元1970.1.1 0点开始到Date对象的毫秒数</li>
+<li>void setTime(long time) 设置Date对象，表示从标准纪元1970.1.1 0点开始以后time毫秒的时间点</li>
+<li>boolean after(Date when) 测试此日期是否在指定日期之后(是否大于when)</li>
+<li>boolean before(Date when) 测试此日期是否在指定日期之前(是否小于when)</li>
+<li>boolean equals(Object obj) 比较两个日期是否相等</li>
+<li>hashCode() 返回此对象的哈希码值<h2 id="DateFormat与SimpleDateFormat"><a href="#DateFormat与SimpleDateFormat" class="headerlink" title="DateFormat与SimpleDateFormat"></a>DateFormat与SimpleDateFormat</h2></li>
+<li>它们的主要工作是完成字符串与时间的转化</li>
+<li>DateFormat是抽象类</li>
+<li>SimpleDateFormat是DateFormat的实现类</li>
+<li>String format(Date date) 传入一个时间对象返回一个时间字符串</li>
+<li>Date parse(String dateStr) 传入一个字符串返回一个时间对象</li>
+<li><p>例如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">String datestr = &quot;2014-07-21&quot;;</div><div class="line">DateFormat dateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);</div><div class="line">try &#123;</div><div class="line">    Date date = dateFormat.parse(datestr);</div><div class="line">&#125; catch (ParseException e) &#123;</div><div class="line">    e.printStackTrace();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><span style="color:red;">字符串与时间相互转换的过程中格式化时间必须一致</span></p>
+<h2 id="Calendar与GregorianCalendar"><a href="#Calendar与GregorianCalendar" class="headerlink" title="Calendar与GregorianCalendar"></a>Calendar与GregorianCalendar</h2></li>
+<li>负责long类型的数(Date类中的fastTime属性)与日期进行转换 <span style="color:red;">日期计算</span></li>
+<li>Calendar是抽象类</li>
+<li>GregorianCalendar是Calendar的实现类</li>
+<li><span style="color:red;">月份:一月是0,二月是1,以此类推十二月是11</span></li>
+<li><span style="color:red;">星期:周日是1,周一是2,以此类推周六是7</span></li>
+</ul>
+
       
     </div>
 
@@ -398,6 +450,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/05/javaFile/" rel="prev" title="javaFile">
+                javaFile <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -444,8 +500,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -460,7 +525,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -503,6 +568,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#时间类关系图"><span class="nav-number">1.</span> <span class="nav-text">时间类关系图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Date类常用方法"><span class="nav-number">2.</span> <span class="nav-text">Date类常用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DateFormat与SimpleDateFormat"><span class="nav-number">3.</span> <span class="nav-text">DateFormat与SimpleDateFormat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calendar与GregorianCalendar"><span class="nav-number">4.</span> <span class="nav-text">Calendar与GregorianCalendar</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
